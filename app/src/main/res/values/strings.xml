@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">WearableSpoof</string>
+    <string name="app_name">HuskySpoof</string>
+    <string name="module_description">Spoof some apps to Pixel 8 Pro for extra features</string>
 </resources>
