@@ -52,7 +52,7 @@ public class MainHook implements IXposedHookLoadPackage {
         XposedHelpers.setStaticObjectField(Build.class, "PRODUCT", "husky");
 
         // ro.product.model
-        XposedHelpers.setStaticObjectField(Build.class, "name", "husky_beta");
+        XposedHelpers.setStaticObjectField(Build.class, "name", "husky");
 
         // ro.system_ext.name
         XposedHelpers.setStaticObjectField(Build.class, "SYSTEM_EXT.MODEL", "Pixel 8 Pro");
@@ -70,7 +70,7 @@ public class MainHook implements IXposedHookLoadPackage {
         XposedHelpers.setStaticObjectField(Build.class, "SYSTEM.MODEL", "Pixel 8 Pro");
 
         // ro.product.flavor
-        XposedHelpers.setStaticObjectField(Build.class, "FLAVOUR", "husky_beta-user");
+        XposedHelpers.setStaticObjectField(Build.class, "FLAVOUR", "husky-user");
 
         // ro.soc.model
         XposedHelpers.setStaticObjectField(Build.class, "SOC.MODEL", "Tensor G3");
@@ -78,8 +78,11 @@ public class MainHook implements IXposedHookLoadPackage {
         // ro.product.board
         XposedHelpers.setStaticObjectField(Build.class, "BOARD", "husky");
 
+        // ro.build.id
+        XposedHelpers.setStaticObjectField(Build.class, "ID", "UQ1A.240105.004");
+
         // ro.build.fingerprint
         XposedHelpers.setStaticObjectField(Build.class, "FINGERPRINT",
-                "google/husky_beta/husky:14/AP11.231020.014/11091730:user/release-keys");
+                "google/husky/husky:14/UQ1A.240105.004/11206848:user/release-keys");
     }
 }
